@@ -7,10 +7,29 @@
 
 ---
 
+
 ## 👥 참여인원
-| 이름 | 역할 |
-|------|------|
-| 김믿음 | 전체 개발 (YouTube API 연동, OpenAI 프롬프트 설계, Streamlit UI, 결과 저장/다운로드, 예외 처리) |
-| 팀원 A | 주제 선정, 사용자 플로우 설계 |
-| 팀원 B | 결과물 검수, UX 피드백 |
-| 팀원 C | 콘텐츠 기획, 테스트 |
+- **총 4명 (비개발자)**  
+
+
+---
+
+
+## 🖥 시스템 환경
+
+### 런타임 / 언어
+- Python 3.10+
+
+### 주요 라이브러리
+- **Streamlit**: 웹 UI 프레임워크
+- **openai**: GPT-4o 호출
+- **youtube-transcript-api**: 자막(Transcript) 수집
+- **requests**: YouTube Data API v3 호출
+- `urllib.parse`: 유튜브 URL 파싱
+
+### 외부 API / 인증
+- **OpenAI API** (GPT-4o)
+- **YouTube Data API v3**
+- 비밀키 관리는 **`st.secrets`** 사용
+    - `OPENAI_API_KEY`
+    - `YOUTUBE_API_KEY`
